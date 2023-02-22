@@ -4,16 +4,5 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [require('daisyui')],
   darkMode: 'class',
-  daisyui: {
-    styled: true,
-    themes: true,
-    base: true,
-    utils: true,
-    logs: true,
-    rtl: false,
-    prefix: 'daisy-',
-    darkTheme: 'dark',
-  },
 }
