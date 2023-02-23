@@ -1,14 +1,13 @@
-import ThemeToggle from './components/ThemeToggle'
 import useThemeStore from './store/ThemeStore'
+import Navbar from './components/Navbar'
 
 function App() {
-  const isDark = useThemeStore(state => state.isDark)
+  const isDark = useThemeStore((state) => state.isDark)
 
   return (
-    <div className='App p-4'>
+    <div className="App">
       <div className={isDark ? 'dark' : ''}>
-        <ThemeToggle />
-        <h1 className='dark:bg-black'>Something</h1>
+        <Navbar />
       </div>
     </div>
   )
