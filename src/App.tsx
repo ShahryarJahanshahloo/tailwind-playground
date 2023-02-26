@@ -8,6 +8,7 @@ function App() {
     <div className="h-full min-h-screen">
       <div className={isDark ? 'dark' : ''}>
         <Navbar />
+        <div className="">mamad</div>
       </div>
     </div>
   )
