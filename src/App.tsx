@@ -1,5 +1,6 @@
 import useThemeStore from './store/ThemeStore'
 import Navbar from './components/Navbar'
+import ThemeSelector from './components/ThemeSelector'
 
 function App() {
   const isDark = useThemeStore(state => state.isDark)
@@ -8,7 +9,7 @@ function App() {
     <div className="h-full min-h-screen">
       <div className={isDark ? 'dark' : ''}>
         <Navbar />
-        <div className="">mamad</div>
+        <ThemeSelector />
       </div>
     </div>
   )

@@ -1,4 +1,3 @@
-import ThemeToggle from './ThemeToggle'
 import HamburgerIcon from './HamburgerIcon'
 import Menu from './Menu'
 import { useCallback, useState } from 'react'
@@ -11,9 +10,10 @@ const Navbar: React.FC = () => {
   }, [])
 
   return (
-    <div className="flex flex-row px-2 pt-2">
-      <HamburgerIcon isOpen={isOpen} onClick={onClick} />
-      <ThemeToggle />
+    <div className={`flex h-15 flex-row px-2 pt-2`}>
+      <div className="flex w-full flex-row items-center justify-between">
+        <HamburgerIcon isOpen={isOpen} onClick={onClick} />
+      </div>
       <Menu />
     </div>
   )

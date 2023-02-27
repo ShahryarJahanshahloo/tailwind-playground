@@ -6,6 +6,9 @@ module.exports = {
       fontFamily: {
         farsi: ['Vazirmatn'],
       },
+      height: {
+        15: '3.75rem',
+      },
     },
   },
   darkMode: 'class',

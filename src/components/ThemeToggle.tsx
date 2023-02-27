@@ -9,13 +9,15 @@ const ThemeToggle: React.FC = () => {
       checked={isDark}
       onChange={toggleTheme}
       className={`${
-        isDark ? 'bg-slate-700' : 'bg-gray-200'
-      } relative inline-flex h-8 w-16 items-center rounded-full`}
+        isDark ? 'bg-zinc-700' : 'bg-gray-100'
+      } relative inline-flex h-9 w-16 items-center rounded-full`}
     >
       <span
         className={`${
-          isDark ? 'translate-x-9 bg-gray-100' : 'translate-x-1 bg-slate-700'
-        } inline-block h-6 w-6 transform rounded-full transition`}
+          isDark
+            ? 'translate-x-8 bg-gray-100'
+            : 'translate-x-1 bg-gray-300 shadow-inner'
+        } inline-block h-7 w-7 transform rounded-full transition`}
       />
     </Switch>
   )
