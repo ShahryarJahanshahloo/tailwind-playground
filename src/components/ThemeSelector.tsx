@@ -1,9 +1,9 @@
 import useThemeStore from '../store/ThemeStore'
 import Moon from './Moon'
 import Stars from './Stars'
+import Clouds from './Clouds'
 
 //TODO: use debounce
-//TODO: add clouds
 const ThemeSelector: React.FC = () => {
   const { isDark, setDark, setLight } = useThemeStore(state => state)
 
@@ -25,20 +25,21 @@ const ThemeSelector: React.FC = () => {
         {/* //sun */}
         <div
           onClick={handleSunOnClick}
-          className={`absolute top-8 left-8 z-10 h-10 w-10 rounded-full bg-yellow-300 shadow-md shadow-yellow-300 transition-all duration-500 ease-out ${
+          className={`shadow-circular absolute left-20 top-8 z-10 h-10 w-10 rounded-full bg-yellow-300 transition-all duration-500 ease-out ${
             isDark ? 'translate-y-48 ' : 'delay-1000'
           }`}
         ></div>
         {/* //moon */}
         <div
           onClick={handleMoonOnClick}
-          className={`clip-moon rounded-fullshadow-md absolute top-8 right-8 z-10 h-10 w-10 shadow-slate-200 transition-all duration-500 ease-out ${
+          className={`clip-moon rounded-fullshadow-md absolute top-8 right-16 z-10 h-10 w-10 shadow-slate-200 transition-all duration-500 ease-out ${
             isDark ? 'translate-y-0 delay-1000' : 'translate-y-48 '
           }`}
         >
           <Moon />
         </div>
         <Stars />
+        <Clouds />
       </div>
     </div>
   )

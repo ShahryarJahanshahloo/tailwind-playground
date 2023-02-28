@@ -1,7 +1,7 @@
 import useThemeStore from '../store/ThemeStore'
 
 const Stars: React.FC = () => {
-  const { isDark, setDark, setLight } = useThemeStore(state => state)
+  const { isDark } = useThemeStore(state => state)
 
   return (
     <>
