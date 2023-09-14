@@ -20,7 +20,7 @@ function App() {
         isDark ? 'dark' : ''
       }`}
     >
-      <div className={`dark:bg-neutral-800 dark:text-neutral-300`}>
+      <div className="dark:bg-neutral-800 dark:text-neutral-300">
         <Navbar isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
         <Menu isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
         <div
